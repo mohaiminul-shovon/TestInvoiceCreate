@@ -30,6 +30,7 @@ try:
                     "9. Same biller and patient info with phone and email both\n"
                     "10. Different biller and patient with only email\n"
                     "11. Different biller and patient with no phone and email\n"
+                    "12. Company biller with phone and email and no patient info\n"
                     "choose your case: \n")
         # same biller and patient info(sms)
         if choice == "1":
@@ -51,7 +52,6 @@ try:
         elif choice == "3":
             header = data3.headers
             body = data3.payload
-
         # For creating new doctor
         elif choice == "7":
             header = data7.headers
@@ -72,7 +72,7 @@ try:
         elif choice == "11":
             header = data11.headers
             body = data11.payload
-        # Company biller with no phone and email and no patient info
+        # Company biller with phone and email and no patient info
         elif choice == "12":
             header = data12.headers
             body = data12.payload
