@@ -22,9 +22,9 @@ payload = json.dumps({
                     "postalCode": "9750",
                     "city": "Oslo",
                     "telephoneNumber": "011665449887",
-                    "email": "andie@insure.no"
+                    "email": ""
                 },
-                "referenceNumber": "ref test -49887"
+                "referenceNumber": "ref test -49887 | andie@insure.no"
             },
             "merchantInfo": {
                 "herId": "",
@@ -46,13 +46,13 @@ payload = json.dumps({
                 "signature": None
             },
             "participant": {
-                "firstName": "Jim",
-                "lastName": "Carrey",
-                "dateOfBirth": "1955-01-31",
-                "socialSecurityNumber": "310155196545",
+                "firstName": "Rog",
+                "lastName": "Pearson",
+                "dateOfBirth": "1999-01-31",
+                "socialSecurityNumber": "31019919652",
                 "hNumber": "",
                 "dNumber": "",
-                "mobileNumber": "0116654154878",
+                "mobileNumber": "",
                 "email": ""
             },
             "invoiceDate": str(datetime.now().date()),

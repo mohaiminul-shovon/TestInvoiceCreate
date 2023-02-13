@@ -52,7 +52,7 @@ payload = json.dumps({
             "participant": {
                 "firstName": "Cute",
                 "lastName": "Fergie",
-                "dateOfBirth": "1971-09-01",
+                "dateOfBirth": "2013-09-01",
                 "socialSecurityNumber": "0109179125560",
                 "hNumber": "",
                 "dNumber": "",

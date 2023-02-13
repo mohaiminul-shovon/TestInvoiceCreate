@@ -3,9 +3,11 @@ import random
 import uuid
 from datetime import datetime
 
+import pytz
 from pytz import timezone
 
 amount = random.randint(100, 1000)
+
 payload = json.dumps({
     "referenceId": "8415e15f-7d95-4601-8bd3-29baedd40388",
     "invoices": [
@@ -14,30 +16,34 @@ payload = json.dumps({
             "organisationNumber": "338731772",
             "invoiceNumber": random.randint(0, 5000),
             "billingInfo": {
-                "person": None,
-                "company": {
-                    "organisationNumber": "938469690",
-                    "name": "Medicine insure test111",
-                    "address1": "Rådhusgata 22",
-                    "address2": None,
-                    "postalCode": "9750",
+                "person": {
+                    "dateOfBirth": "1981-05-01",
+                    "socialSecurityNumber": "01032300371",
+                    "hNumber": "",
+                    "dNumber": "",
+                    "firstName": "Willhelm Fos",
+                    "lastName": "Kluvstad",
+                    "address1": "71 North Cost",
+                    "address2": "",
+                    "postalCode": "5086",
                     "city": "Oslo",
-                    "telephoneNumber": "",
+                    "mobileNumber": "4797777776",
                     "email": ""
                 },
-                "referenceNumber": "NORDG200.200 / insure@medicine.net"
+                "company": "",
+                "referenceNumber": ""
             },
             "merchantInfo": {
                 "herId": "",
-                "hprNumber": "12204693",
-                "name": "Shovon",
+                "hprNumber": "654558469",
+                "name": "Test11",
                 "socialSecurityNumber": "",
-                "bankAccountNumber": "938601111794",
+                "bankAccountNumber": "938601112945",
                 "personalOrganisationNumber": None,
                 "company": {
                     "organisationNumber": "338731772",
                     "name": "Test Ent Medisinsk",
-                    "address1": "Solheimsgaten 5",
+                    "address1": "Solheimsgaten 5, 5058 Bergen, Norway",
                     "address2": None,
                     "postalCode": "5058",
                     "city": "BARGEN",
@@ -47,18 +53,18 @@ payload = json.dumps({
                 "signature": None
             },
             "participant": {
-                "firstName": "Ruth",
-                "lastName": "Phoden",
-                "dateOfBirth": "2011-05-09",
-                "socialSecurityNumber": "09051120658",
+                "firstName": "Christy",
+                "lastName": "John",
+                "dateOfBirth": "2009-05-01",
+                "socialSecurityNumber": "010505209625",
                 "hNumber": "",
                 "dNumber": "",
-                "mobileNumber": "",
+                "mobileNumber": "47982036148",
                 "email": ""
             },
             "invoiceDate": str(datetime.now().date()),
             "createTime": datetime.now(timezone('CET')).strftime("%H:%M:%S"),
-            "dueDate": "2022-12-15",
+            "dueDate": "2023-01-17",
             "invoiceItems": [
                 {
                     "articleNumber": "          ",
@@ -72,7 +78,7 @@ payload = json.dumps({
                 }
             ],
             "description": None,
-            "kidNumber": "000000000619201920193",
+            "kidNumber": "0000000006192019206546",
             "paymentState": 1,
             "totalAmount": amount,
             "totalVatFee": 0,
