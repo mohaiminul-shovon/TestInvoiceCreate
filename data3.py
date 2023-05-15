@@ -21,7 +21,7 @@ payload = json.dumps({
                     "address2": None,
                     "postalCode": "9750",
                     "city": "Oslo",
-                    "telephoneNumber": "011665449887",
+                    "telephoneNumber": "",
                     "email": ""
                 },
                 "referenceNumber": "ref test -49887 | andie@insure.no"

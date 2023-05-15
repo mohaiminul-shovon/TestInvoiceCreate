@@ -27,7 +27,7 @@ payload = json.dumps({
                     "address2": "",
                     "postalCode": "5086",
                     "city": "Oslo",
-                    "mobileNumber": "0112517449001",
+                    "mobileNumber": "47556954",
                     "email": "ruthy@yahoo.com"
                 },
                 "company": "",
@@ -59,7 +59,7 @@ payload = json.dumps({
                 "socialSecurityNumber": "110116910001",
                 "hNumber": "",
                 "dNumber": "",
-                "mobileNumber": "0112517449001",
+                "mobileNumber": "98543625",
                 "email": "ruthy@yahoo.com"
             },
             "invoiceDate": str(datetime.now().date()),

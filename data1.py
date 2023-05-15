@@ -6,7 +6,7 @@ from datetime import datetime
 import pytz
 from pytz import timezone
 
-amount = random.randint(100, 1000)
+amount = random.randint(100,10000)
 
 payload = json.dumps({
     "referenceId": "8415e15f-7d95-4601-8bd3-29baedd40388",
@@ -17,8 +17,8 @@ payload = json.dumps({
             "invoiceNumber": random.randint(0, 5000),
             "billingInfo": {
                 "person": {
-                    "dateOfBirth": "1981-05-01",
-                    "socialSecurityNumber": "010171162130",
+                    "dateOfBirth": "",
+                    "socialSecurityNumber": "26020668244",
                     "hNumber": "",
                     "dNumber": "",
                     "firstName": "low",
@@ -27,7 +27,7 @@ payload = json.dumps({
                     "address2": "",
                     "postalCode": "5086",
                     "city": "Oslo",
-                    "mobileNumber": "0112121466874",
+                    "mobileNumber": "94570145",
                     "email": ""
                 },
                 "company": "",
@@ -55,11 +55,11 @@ payload = json.dumps({
             "participant": {
                 "firstName": "low",
                 "lastName": "Biden",
-                "dateOfBirth": "1981-05-01",
-                "socialSecurityNumber": "010171162130",
+                "dateOfBirth": "0001-01-01",
+                "socialSecurityNumber": "26020668244",
                 "hNumber": "",
                 "dNumber": "",
-                "mobileNumber": "0112121466874",
+                "mobileNumber": "49665527",
                 "email": ""
             },
             "invoiceDate": str(datetime.now().date()),

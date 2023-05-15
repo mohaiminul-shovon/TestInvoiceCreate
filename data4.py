@@ -47,10 +47,10 @@ payload = json.dumps({
                 "signature": None
             },
             "participant": {
-                "firstName": "Ruth",
-                "lastName": "Phoden",
-                "dateOfBirth": "2011-05-09",
-                "socialSecurityNumber": "09051120658",
+                "firstName": "Anonym",
+                "lastName": "Anonym",
+                "dateOfBirth": "0001-01-01",
+                "socialSecurityNumber": "",
                 "hNumber": "",
                 "dNumber": "",
                 "mobileNumber": "",

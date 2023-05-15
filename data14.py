@@ -2,12 +2,9 @@ import json
 import random
 import uuid
 from datetime import datetime
-
-import pytz
 from pytz import timezone
 
 amount = random.randint(100, 1000)
-
 payload = json.dumps({
     "referenceId": "8415e15f-7d95-4601-8bd3-29baedd40388",
     "invoices": [
@@ -17,17 +14,17 @@ payload = json.dumps({
             "invoiceNumber": random.randint(0, 5000),
             "billingInfo": {
                 "person": {
-                    "dateOfBirth": "1981-05-01",
-                    "socialSecurityNumber": "01032300371",
+                    "dateOfBirth": "",
+                    "socialSecurityNumber": "19091397067",
                     "hNumber": "",
                     "dNumber": "",
-                    "firstName": "Willhelm Fos",
-                    "lastName": "Kluvstad",
-                    "address1": "71 North Cost",
+                    "firstName": "Rihana",
+                    "lastName": "Mariam",
+                    "address1": "322665 Gary, Bargen, Norway",
                     "address2": "",
-                    "postalCode": "5086",
-                    "city": "Oslo",
-                    "mobileNumber": "4797777776",
+                    "postalCode": "5085",
+                    "city": "BARGEN",
+                    "mobileNumber": "98655652",
                     "email": ""
                 },
                 "company": "",
@@ -35,10 +32,10 @@ payload = json.dumps({
             },
             "merchantInfo": {
                 "herId": "",
-                "hprNumber": "654558469",
-                "name": "Test11",
+                "hprNumber": "12204693",
+                "name": "Shovon",
                 "socialSecurityNumber": "",
-                "bankAccountNumber": "938601112945",
+                "bankAccountNumber": "938601111794",
                 "personalOrganisationNumber": None,
                 "company": {
                     "organisationNumber": "338731772",
@@ -53,18 +50,18 @@ payload = json.dumps({
                 "signature": None
             },
             "participant": {
-                "firstName": "Christy",
-                "lastName": "John",
-                "dateOfBirth": "2009-05-01",
-                "socialSecurityNumber": "010505209625",
+                "firstName": "Laila",
+                "lastName": "Mariam",
+                "dateOfBirth": "2002-09-01",
+                "socialSecurityNumber": "01090295920",
                 "hNumber": "",
                 "dNumber": "",
-                "mobileNumber": "47982036148",
+                "mobileNumber": "98655970",
                 "email": ""
             },
             "invoiceDate": str(datetime.now().date()),
             "createTime": datetime.now(timezone('CET')).strftime("%H:%M:%S"),
-            "dueDate": "2023-01-17",
+            "dueDate": "2022-12-15",
             "invoiceItems": [
                 {
                     "articleNumber": "          ",
@@ -78,7 +75,7 @@ payload = json.dumps({
                 }
             ],
             "description": None,
-            "kidNumber": "0000000006192019206546",
+            "kidNumber": "000000000619201920193",
             "paymentState": 1,
             "totalAmount": amount,
             "totalVatFee": 0,

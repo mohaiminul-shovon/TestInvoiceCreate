@@ -13,7 +13,10 @@ import data9
 import data10
 import data11
 import data12
+import data14
 import vipps_test
+from pytz import timezone
+from datetime import datetime
 
 url1 = "https://test1.tkhelse.com/dev-test/api/infodoc/create-invoices/"
 url2 = "https://test2.tkhelse.com/dev-test/api/infodoc/create-invoices/"
@@ -25,13 +28,13 @@ try:
                     "3. company biller and know patient info with email\n"
                     "4. company biller and unknow patient info with email\n"
                     "5. same biller and patient info with only email\n"
-                    "6. One biller and no patient info with only mobile number\n"
+                    "6. Company biller and known patient info with only mobile number\n"
                     "7. Different biller and patient with phone number and email\n"
                     "8. Same biller and patient info with no phone number and email\n"
                     "9. Same biller and patient info with phone and email both\n"
                     "10. Different biller and patient with only email\n"
                     "11. Different biller and patient with no phone and email\n"
-                    "12. Company biller with phone and email and no patient info\n"
+                    "12. Company biller and unknown patient with no email\n"
                     "13. For Vipps test with vipps user\n"
                     "choose your case: \n")
         # same biller and patient info(sms)
@@ -94,6 +97,11 @@ try:
             header = vipps_test.headers
             body = vipps_test.payload
             print(body)
+        # For payer less than 18 years old
+        elif choice == "14":
+            header = data14.headers
+            body = data14.payload
+            print(body)
         # Company biller with only email
         else:
             header = data4.headers
@@ -104,4 +112,5 @@ try:
         pass
 except KeyboardInterrupt:
     print("Exiting from the program. Thank you!")
+    
 

@@ -14,8 +14,8 @@ payload = json.dumps({
             "invoiceNumber": random.randint(0, 5000),
             "billingInfo": {
                 "person": {
-                    "dateOfBirth": "1995-08-23",
-                    "socialSecurityNumber": "23089599522",
+                    "dateOfBirth": "",
+                    "socialSecurityNumber": "21101788706",
                     "hNumber": "",
                     "dNumber": "",
                     "firstName": "Karim",

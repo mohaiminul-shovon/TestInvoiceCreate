@@ -22,10 +22,10 @@ payload = json.dumps({
                     "address2": None,
                     "postalCode": "9750",
                     "city": "Oslo",
-                    "telephoneNumber": "011236545658",
+                    "telephoneNumber": "",
                     "email": ""
                 },
-                "referenceNumber": "NORDG200.200 / cray@hotmail.no"
+                "referenceNumber": "NORDG200.200 "
             },
             "merchantInfo": {
                 "herId": "",
@@ -49,7 +49,7 @@ payload = json.dumps({
             "participant": {
                 "firstName": "Anonym",
                 "lastName": "Anonym",
-                "dateOfBirth": "",
+                "dateOfBirth": "0001-01-01",
                 "socialSecurityNumber": "",
                 "hNumber": "",
                 "dNumber": "",

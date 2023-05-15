@@ -12,21 +12,17 @@ payload = json.dumps({
             "organisationNumber": "338731772",
             "invoiceNumber": random.randint(0, 5000),
             "billingInfo": {
-                "person": {
-                    "dateOfBirth": "1995-08-23",
-                    "socialSecurityNumber": "23089597555",
-                    "hNumber": "",
-                    "dNumber": "",
-                    "firstName": "Mohaiminul",
-                    "lastName": "Shovon",
-                    "address1": "291 North Avenue, Bargen, Norway",
-                    "address2": "",
-                    "postalCode": "5085",
-                    "city": "BARGEN",
-                    "mobileNumber": "4769565653",
+                "person": "",
+                "company": {
+                    "organisationNumber": "938469695",
+                    "name": "Medicine insure test36",
+                    "address1": "Rådhusgata 22",
+                    "address2": None,
+                    "postalCode": "9720",
+                    "city": "Kristiansund",
+                    "telephoneNumber": "985626568",
                     "email": ""
                 },
-                "company": "",
                 "referenceNumber": ""
             },
             "merchantInfo": {
@@ -48,7 +44,16 @@ payload = json.dumps({
                 },
                 "signature": None
             },
-            "participant": {},
+            "participant": {
+                "firstName": "Rahim",
+                "lastName": "Khanom",
+                "dateOfBirth": "1958-02-06",
+                "socialSecurityNumber": "06025819336",
+                "hNumber": "",
+                "dNumber": "",
+                "mobileNumber": "498752105",
+                "email": "Rahima@kalco.no"
+                },
             "invoiceDate": str(datetime.now().date()),
             "createTime": datetime.now(timezone('CET')).strftime("%H:%M:%S"),
             "dueDate": "2022-12-17",
